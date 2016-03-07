@@ -50,6 +50,10 @@ gem 'yandex-translator'
 gem 'easy_translate'
 # Helper for form
 gem 'simple_form'
+# Easy automated access to IMDB
+gem 'imdb', '~> 0.8'
+# Ruby API Client for Subscene.com
+# gem 'subscene'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

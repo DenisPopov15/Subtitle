@@ -248,6 +248,8 @@ GEM
       json (~> 1.8)
       multi_xml (>= 0.5.2)
     i18n (0.7.0)
+    imdb (0.8.1)
+      nokogiri (>= 1.6.0)
     inflecto (0.0.2)
     inherited_resources (1.6.0)
       actionpack (>= 3.2, < 5)
@@ -421,6 +423,7 @@ DEPENDENCIES
   easy_translate
   faker
   fog
+  imdb (~> 0.8)
   jbuilder (~> 2.0)
   jquery-rails
   kaminari
