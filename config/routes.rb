@@ -6,6 +6,10 @@ Rails.application.routes.draw do
       sign_up:  'register'
     }
 
+  get 'user-words'  => 'user_words#index'
+  post 'user-word'  => 'user_words#new'
+  post 'user-words' => 'user_words#create'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

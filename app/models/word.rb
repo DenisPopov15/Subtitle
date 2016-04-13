@@ -3,19 +3,18 @@ class Word
   include Mongoid::Timestamps
   include Mongoid::Search
   include Mongoid::Slug
-  include Mongoid::Attributes::Dynamic
+  # include Mongoid::Attributes::Dynamic
   include Ants::Id
 
   ## Attributes
   field :eng
   field :rus
 
+
   ## Relations
   # has_many :subtitles
-  # has_many :user_words
-
-  ## Scopes
-  # scope :credit_cards, -> { where(_method_type: :credit_card) }
+  has_many :user_words
+  accepts_nested_attributes_for :user_words
 
   ## Callbacks
   # after_validation :update_rating

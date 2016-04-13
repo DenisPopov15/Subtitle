@@ -3,13 +3,14 @@ class User
   include Mongoid::Timestamps
   include Mongoid::Search
   include Mongoid::Slug
-  include Mongoid::Attributes::Dynamic
+  # include Mongoid::Attributes::Dynamic
   include Ants::Id
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
+
 
   ## Database authenticatable
   field :email,              type: String, default: ""

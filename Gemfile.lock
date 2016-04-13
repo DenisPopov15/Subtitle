@@ -406,6 +406,7 @@ GEM
     xml-simple (1.1.5)
     yandex-translator (0.3.2)
       httparty (>= 0.13.4)
+    zipruby (0.3.6)
 
 PLATFORMS
   ruby
@@ -444,6 +445,7 @@ DEPENDENCIES
   uglifier (>= 1.3.0)
   web-console (~> 2.0)
   yandex-translator
+  zipruby
 
 BUNDLED WITH
    1.11.2

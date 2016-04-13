@@ -1,0 +1,12 @@
+Select subtitle file to parse
+<%= form_tag({action: :new}, multipart: true) do %>
+  <%= file_field_tag 'subtitle'%>
+  <%= submit_tag "Upload"%>
+<% end %>
+<!--
+or</br>
+Enter name of film
+<%= form_tag({action: :new}) do %>
+  <%= text_field_tag 'subtitlename'%>
+  <%= submit_tag "Enter"%>
+<% end %> -->

@@ -2,6 +2,8 @@ class ParseService
   def self.parse(source)
     parsed_words = []
     source.each do |line|
+      line.encode!('UTF-16', 'UTF-8', :invalid => :replace, :replace => '')
+      line.encode!('UTF-8', 'UTF-16')
       line = line.gsub(/[^a-zA-Z \]`]/,"").gsub(/(adv|prep|pron|int)/, "")
       words = line.split(' ')
       words.each do |word|
@@ -21,5 +23,19 @@ class ParseService
     end
     parsed_words
   end
+
+
+  # def encode(f)
+  #   begin
+  #   decode = f.force_encoding('UTF-8')
+  #   unless decode.valid_encoding?
+  #   decode = decode.encode( 'UTF-8', 'Windows-1251' )
+  #   end
+  #   content = decode
+  #   rescue EncodingError
+  #     content.encode!( 'UTF-8', invalid: :replace, undef: :replace )
+  #   end
+  #   decode
+  # end
 
 end

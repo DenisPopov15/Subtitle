@@ -54,6 +54,8 @@ gem 'simple_form'
 gem 'imdb', '~> 0.8'
 # Ruby API Client for Subscene.com
 # gem 'subscene'
+
+gem 'zipruby'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
